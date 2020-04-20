@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BlogT</title>
+    <link>http://Ditto.github.io/</link>
+    <description>Recent content on BlogT</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <lastBuildDate>Mon, 20 Apr 2020 22:14:08 +0800</lastBuildDate>
+    
+	<atom:link href="http://Ditto.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Maven,Java的包管理</title>
+      <link>http://Ditto.github.io/posts/mavenjava%E7%9A%84%E5%8C%85%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Mon, 20 Apr 2020 22:14:08 +0800</pubDate>
+      
+      <guid>http://Ditto.github.io/posts/mavenjava%E7%9A%84%E5%8C%85%E7%AE%A1%E7%90%86/</guid>
+      <description>Java包管理  当JVM执行一个类的字节码的时候，如果遇到新的类会从ClassPath里面加载他，任何重新执行字节码 当然因为一个程序里面会依赖很多的类，如果是很多同名的类同时出现的时候就会导致某些时候会出现问题 同时当我们引用第三方包的时候如何告诉JVM从哪里去找这些第三方的类库？  Maven的包管理  根据pom文件的配置，Maven会按照约定到中央仓库下载对应的类库到本地 Maven遵从的原则是：绝对不允许最终的classpath出现同名不同版本的jar包 Maven解决依赖冲突的原则：最近的胜出  包冲突解决  在IDEA的Maven查看包的依赖进行手动的干预 用Dependency Analyzer插件查看依赖关系，Exculd排除  </description>
+    </item>
+    
+    <item>
+      <title>使用hugod&#43;github搭建个人博客</title>
+      <link>http://Ditto.github.io/posts/%E4%BD%BF%E7%94%A8hugod&#43;github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Wed, 26 Feb 2020 08:40:12 +0800</pubDate>
+      
+      <guid>http://Ditto.github.io/posts/%E4%BD%BF%E7%94%A8hugod&#43;github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>安装+环境变量配置   需要首先 下载 对应的Hugo文件
+  然后将对应的文件目录地址添加到环境变量里面，测试是否配置正确在终端输入 hugo version，会版本的信息
+  本地环境搭建   首先将终端切换到需要建造博客的目录下面然后hugo new site xx xx是博客目录可以采用你的github名字.github.io.creator这种形式
+  cd xxxgit initgit submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/anankexxx是刚才创建的目录，从Github上面下载主题文件
+  echo &#39;theme = &amp;quot;ananke&amp;quot;&#39; &amp;gt;&amp;gt; config.toml
+添加刚才的主题到配置文件
+  hugo new posts/my-first-post.md
+创建一篇博客文章，my-first-post是文章的名字，可以根据自己的内容进行更改。
+  hugo server -D
+  在本机启动Hugo的服务，会出现一下的代码
+ | EN+------------------+----+Pages | 10Paginator pages | 0Non-page files | 0Static files | 3Processed images | 0Aliases | 1Sitemaps | 1Cleaned | 0Total in 11 msWatching for changes in /Users/bep/quickstart/{content,data,layouts,static,themes}Watching for config changes in /Users/bep/quickstart/config.</description>
+    </item>
+    
+  </channel>
+</rss>
